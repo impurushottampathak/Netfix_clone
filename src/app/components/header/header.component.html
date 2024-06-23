@@ -1,0 +1,16 @@
+<header class="bg-main dark-nav sticky top-0 flex items-center justify-between px-10s">
+    <!-- log & Nav items -->
+     <div class="flex gap-5">
+        <a href="/"><img width="130" class="pt-2" src="/assets/netflix-logo.png" alt="netflix-img"></a>
+            <ul class="flex items-center" *ngFor="let item of navList">
+                <li class="text-neutral-200 pt-2 cursor-pointer text-sm font-extralight hover:text-gray-400 transition-[1s]">{{item}}</li>
+            </ul>
+        </div>
+    <!-- user name -->
+     <div class="text-white pt-2 pr-6">
+        <div class="flex items-center gap-2">
+            <img src="https://as2.ftcdn.net/v2/jpg/07/92/87/59/1000_F_792875946_bWfNmK8Zla7GbaDXAQQ8YMBJ5ISUkNa1.webp" width="38" alt="user-img">
+            <a href="/"><span>Welcome <strong>PP</strong></span></a>
+          </div>
+     </div>
+</header>

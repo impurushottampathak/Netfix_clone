@@ -1,0 +1,8 @@
+<app-banner [bannerTitle]="(bannerDetails$ | async)?.original_title" [bannerOverview]="(bannerDetails$ | async)?.overview"
+  [key]="(bannerVideo$ | async)?.results[0].key" />
+<app-movie-carousel [videoContent]="movies" [title]="'Movies'"></app-movie-carousel>
+<app-movie-carousel [videoContent]="tvShows" [title]="'Tv Shows'"></app-movie-carousel>
+<app-movie-carousel [videoContent]="nowPlayingMovies" [title]="'Now Playing Movies'"></app-movie-carousel>
+<app-movie-carousel [videoContent]="topRatedMovies" [title]="'Top Rated Movies'"></app-movie-carousel>
+<app-movie-carousel [videoContent]="upcomingMovies" [title]="'Upcoming Movies'"></app-movie-carousel>
+<app-movie-carousel [videoContent]="popularMovies" [title]="'Popular On Netflix'"></app-movie-carousel>
